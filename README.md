@@ -6,7 +6,7 @@
 
 
 ### Datos de entrada 
-Para la extracción de los datos de información térmica, se usa un algoritmo en Matlab que tiene como insumos las Imágenes Térmicas, RGB y el Excel con los valores térmicos, la imagen tiene un tamaño de 480x640, equivalente al tamaño de la matriz del archivo csv, la imagen termica se carga usando la funcion `imread` 
+ 
 
 
 ### Paso a paso
@@ -26,4 +26,4 @@ Los puntos del vector tipo hoja se almacenan en un vector que contiene las coord
 
 Para determinar el numero de hojas a partir del nuevo vector es necesario determinar el número de conglomerados en este conjunto de datos, para esto se utilizó el método del codo con el que se obtienen gráficas como la que se muestra en la Figura
 
-![Creacion de Mascara](https://github.com/Brayanjurado1325/Angulos-de-hojas/blob/main/Imagenes/)
+![Creacion de Mascara](https://github.com/Brayanjurado1325/Angulos-de-hojas/blob/main/Imagenes/ebowl.png)
