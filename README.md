@@ -3,32 +3,6 @@
 Funcion para cargar las nubes de puntos desde un archivo .txt con etiqueta
 
 
-
-# CALCULO DE ANGULOS 
-Calculo de angulo con dos vectores 
-
-
-![Creacion de Mascara](https://github.com/Brayanjurado1325/Angulos-de-hojas/blob/main/Imagenes/1.png)
-
-
-```ruby
-def angulo(u,v):
-  x = u.dot(v)
-  y = np.linalg.norm(u)*np.linalg.norm(v)
-  an = acos(x/y)   # Angulo en radianes
-  a = math.degrees(an)  # Angulo en grados
-  return a
-```
-Calculo de angulo usando 3 puntos
-
-```ruby
-def anguloFin(b,t,p):
-  u= t - b
-  v= p - b
-  a = angulo(u,v)
-  return a
-```
-
 # TRANSFORMAR NUBE DE PUNTOS
 
 ## Separa tallo y hojas
@@ -58,16 +32,7 @@ Al final de este proceso las salidas son:
 * ytm 
 * ztm 
 
-# CALCULAR ANGULOS POR ALTURA
-
-1. Sacar los cluster en el eje z
-2. Separar los grupos en diferentes grupos
-3. Seleccionar el menor valor en Z de cada punto para que sea el punto base. 
-4. Seleccionar los puntos mas alejados del punto base en cada closter.
-5. usando como referencia el el centro X y Y, y desplazando en segun el punto de cada closter identificado en el punto 3
-6. Calcular los angulos de cada punto y detarminar un promedio.
-
-## Calcular número de Clusters 
+# Calcular número de Clusters 
 
 Elbow Method Code
 
@@ -82,3 +47,5 @@ for k in K:
     kmeanModel.fit(df)
     distortions.append(kmeanModel.inertia_)
 ```
+
+
